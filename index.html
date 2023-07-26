@@ -48,7 +48,7 @@
             <!-- Dropdown button -->
             <div class="dropdown block md:block lg:hidden ">
                 <label class="text-[#121212] md:text-white" tabindex="0"><i class="fa-solid fa-bars"></i></label>
-                <ul tabindex="0" class="dropdown-content menu p-2 text-black bg-base-100 rounded-box relative right-2 ">
+                <ul tabindex="0" class="dropdown-content menu p-2 text-black bg-base-100 rounded-box relative right-2 z-10">
                     <li>
                         <div class="relative rounded-full block md:hidden">
                             <input type="text" class="pl-10 pr-5 py-2 w-full  border-gray-300 rounded-full focus:outline-none focus:ring focus:border-blue-300" placeholder="Search here">
@@ -66,67 +66,72 @@
         </nav>
     <!-- This is banner section -->
         <section class="relative">
-            <!-- Slider Banner Part -->
-            <div class="carousel w-full rounded-xl">
-                <div id="slide1" class="carousel-item relative w-full">
-                  <img src="./Images/banner1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide2" class="carousel-item relative w-full">
-                  <img src="./Images/banner2.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide3" class="carousel-item relative w-full">
-                  <img src="./Images/banner3.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <div id="slide4" class="carousel-item relative w-full">
-                  <img src="./Images/banner4.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a> 
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
+            <div class="relative">
+                <!-- Slider Banner Part -->
+                <div class="carousel w-full rounded-xl">
+                    <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a> 
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                    </div> 
+                    <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a> 
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                    </div> 
+                    <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./Images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a> 
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                    </div> 
+                    <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./Images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a> 
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                    </div>
                 </div>
-              </div>
-            <!-- Text Box -->
-            <div class="flex flex-col gap-3 items-center w-full h-fit text-white rounded-xl bg-slate-600 absolute top-0 ">
-                <h1 class="text-7xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h1>
-                <p class="text-xl">We supply highly quality organic products</p>
-                <button class="btn bg-[#F85559] text-white">Shop Now</button>
-            </div>
-              <!-- Banner second part -->
-            <div class="flex p-6 gap-12 text-center justify-center hidden md:flex lg:flex">
-                <div>
-                    <img src="./Images/fruit1.png" alt="">
-                    <p>Grape</p>
-                </div>
-                <div>
-                    <img src="./Images/fruit2.png" alt="">
-                    <p>Orange</p>
-                </div>
-                <div>
-                    <img src="./Images/fruit3.png" alt="">
-                    <p>Mango</p>
-                </div>
-                <div>
-                    <img src="./Images/fruit4.png" alt="">
-                    <p>Strawberry</p>
-                </div>
-                <div>
-                    <img src="./Images/fruit5.png" alt="">
-                    <p>Pomegranate</p>
+                <!-- Text Box -->
+                <div class="pt-24 flex flex-col gap-3 items-center w-full h-full text-white rounded-xl bg-slate-600 bg-opacity-30 pointer-events-none absolute top-0 ">
+                    <h1 class="text-7xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h1>
+                    <p class="text-xl">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] border-none text-white pointer-events-auto">Shop Now</button>
                 </div>
             </div>
+            
         </section>
+        
+        <!-- Banner second part -->
+        
+        <div class="flex flex-1 p-6 gap-12 lg:w-3/4 md:w-full mx-auto mb-8 rounded-xl drop-shadow-xl text-center bg-white justify-center hidden md:flex lg:flex border -mt-24">
+            <div>
+                <div><img class="w-full" src="./Images/fruit1.png" alt=""></div>
+                <p>Grape</p>
+            </div>
+            <div>
+                <div><img class="w-full" src="./Images/fruit2.png" alt=""></div>
+                <p>Orange</p>
+            </div>
+            <div>
+                <div><img class="w-full" src="./Images/fruit3.png" alt=""></div>
+                <p>Mango</p>
+            </div>
+            <div>
+                <div><img class="w-full" src="./Images/fruit4.png" alt=""></div>
+                <p>Strawberry</p>
+            </div>
+            <div>
+                <div><img class="w-full" src="./Images/fruit5.png" alt=""></div>
+                <p>Pomegranate</p>
+            </div>
+        </div>
 
     <!-- Deal of the day section -->
         <section class="flex flex-col items-center">
@@ -244,7 +249,62 @@
 
     <!-- Meet the team section -->
         <section>
+            <div class="hero min-h-screen" style="background-image: url(./Images/team.png);">
+                <div class="hero-overlay bg-opacity-60"></div>
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-xl">
+                    <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                    <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                  </div>
+                </div>
 
+                <!-- Members section -->
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col items-center gap-3">
+                        <div><img src="./Images/member1.png" alt=""></div>
+                        <p class="text-2xl font-bold text-white">Awlad Hossain</p>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-twitter" style="color: #fff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-linkedin-in" style="color: #fff;"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-3">
+                        <div><img src="./Images/member2.png" alt=""></div>
+                        <p class="text-2xl font-bold text-white">Safia Chowdhury</p>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-twitter" style="color: #fff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-linkedin-in" style="color: #fff;"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-3">
+                        <div><img src="./Images/member3.png" alt=""></div>
+                        <p class="text-2xl font-bold text-white">Rokib Hossain</p>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-twitter" style="color: #fff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-linkedin-in" style="color: #fff;"></i></div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center gap-3">
+                        <div><img src="./Images/member4.png" alt=""></div>
+                        <p class="text-2xl font-bold text-white">Chaity</p>
+                        <p class="text-white">Fruits Expert</p>
+                        <div class="flex gap-3">
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-twitter" style="color: #fff;"></i></div>
+                            <div class="rounded-full w-7 h-7 p-1 text-center bg-[#f85559]"><i class="fa-brands fa-linkedin-in" style="color: #fff;"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <!-- Why choose us section -->

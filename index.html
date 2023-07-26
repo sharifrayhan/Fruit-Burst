@@ -65,7 +65,7 @@
             </div>
         </nav>
     <!-- This is banner section -->
-        <section class="">
+        <section class="relative">
             <!-- Slider Banner Part -->
             <div class="carousel w-full rounded-xl">
                 <div id="slide1" class="carousel-item relative w-full">
@@ -97,8 +97,14 @@
                   </div>
                 </div>
               </div>
+            <!-- Text Box -->
+            <div class="flex flex-col gap-3 items-center w-full h-fit text-white rounded-xl bg-slate-600 absolute top-0 ">
+                <h1 class="text-7xl font-extrabold text-center">Exotic tastes at your <br>doorstep</h1>
+                <p class="text-xl">We supply highly quality organic products</p>
+                <button class="btn bg-[#F85559] text-white">Shop Now</button>
+            </div>
               <!-- Banner second part -->
-            <div class="flex p-6 gap-12 text-center justify-center">
+            <div class="flex p-6 gap-12 text-center justify-center hidden md:flex lg:flex">
                 <div>
                     <img src="./Images/fruit1.png" alt="">
                     <p>Grape</p>
@@ -123,9 +129,9 @@
         </section>
 
     <!-- Deal of the day section -->
-        <section>
+        <section class="flex flex-col items-center">
             <!-- part 1 -->
-            <div class="flex items-center justify-between">
+            <div class="flex flex-col md:flex-col lg:flex-row items-center justify-between w-full">
                 <div>
                     <h1 class="font-extrabold text-5xl">Deal of the day</h1><br>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -154,11 +160,11 @@
                 </div>
             </div>
             <!-- Part 2 card section -->
-            <div class="flex">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-center mt-5 gap-3">
                 <!-- cards -->
-                <div class="text-center">
-                    <img src="./Images/fruit6.png" alt="">
-                    <p class="font-bold text-2xl">12.90$ - 18.85$</p>
+                <div class="border-stone-100 border flex flex-col items-center gap-3 bg-base-100 shadow-xl p-12 rounded-xl w-72"> 
+                    <div class="mb-5"><img src="./Images/fruit6.png" alt=""></div>
+                    <p class="font-bold text-2xl mb-5">12.90$ - 18.85$</p>
                     <p>Apples</p>
                     <div class="rating rating-lg rating-half">
                         <input type="radio" name="rating-10" class="rating-hidden" />
@@ -175,9 +181,9 @@
                       </div>
                     <p class="text-[#F85559] text-lg font-bold">Details</p>
                 </div>
-                <div class="text-center">
-                    <img src="./Images/fruit7.png" alt="">
-                    <p class="font-bold text-2xl">12.90$ - 18.85$</p>
+                <div class="border-stone-100 border flex flex-col items-center gap-3 bg-base-100 shadow-xl p-12 rounded-xl w-72">
+                    <div class="mb-5"><img src="./Images/fruit7.png" alt=""></div>
+                    <p class="font-bold text-2xl mb-5">12.90$ - 18.85$</p>
                     <p>Orange</p>
                     <div class="rating rating-lg rating-half">
                         <input type="radio" name="rating-10" class="rating-hidden" />
@@ -194,9 +200,9 @@
                       </div>
                     <p class="text-[#F85559] text-lg font-bold">Details</p>
                 </div>
-                <div class="text-center">
-                    <img src="./Images/fruit8.png" alt="">
-                    <p class="font-bold text-2xl">12.90$ - 18.85$</p>
+                <div class="border-stone-100 border flex flex-col items-center gap-3 bg-base-100 shadow-xl p-12 rounded-xl w-72">
+                    <div class="mb-5"><img src="./Images/fruit8.png" alt=""></div>
+                    <p class="font-bold text-2xl mb-5">12.90$ - 18.85$</p>
                     <p>Red Dragon</p>
                     <div class="rating rating-lg rating-half">
                         <input type="radio" name="rating-10" class="rating-hidden" />
@@ -213,9 +219,9 @@
                       </div>
                     <p class="text-[#F85559] text-lg font-bold">Details</p>
                 </div>
-                <div class="text-center">
-                    <img src="./Images/fruit9.png" alt="">
-                    <p class="font-bold text-2xl">12.90$ - 18.85$</p>
+                <div class="border-stone-100 border flex flex-col items-center gap-3 bg-base-100 shadow-xl p-12 rounded-xl w-72">
+                    <div class="mb-5"><img src="./Images/fruit9.png" alt=""></div>
+                    <p class="font-bold text-2xl mb-5">12.90$ - 18.85$</p>
                     <p>Banana</p>
                     <div class="rating rating-lg rating-half">
                         <input type="radio" name="rating-10" class="rating-hidden" />
@@ -232,7 +238,8 @@
                       </div>
                     <p class="text-[#F85559] text-lg font-bold">Details</p>
                 </div>
-            </div>
+            </div><br>
+            <button class="btn bg-[#F85559] text-white">Shop All</button>
         </section>
 
     <!-- Meet the team section -->
